@@ -8,6 +8,7 @@ class Calculator{
     float multiplication(float op1, float op2){
         return(op1*op2);
     }
+
     /**
      * The division function takes two float operands and returns their sum.
      * 
@@ -19,10 +20,16 @@ class Calculator{
     float division(float op1, float op2){
         return(op1/op2);
     }
-
+    float square(float op){
+        return(op*op);
+    }
+    float cube(float op){
+        return(op*op*op);
+    }
         public static void main(String args[]){
             float op1=10;
             float op2=5;
+            float op=2;
             Calculator calc =new Calculator();
             float add_result=calc.addition(op1,op2);
             System.out.println("Addition: "+add_result);
@@ -32,6 +39,10 @@ class Calculator{
             System.out.println("Multiplication: "+mul_result);
             float div_result=calc.division(op1,op2);
             System.out.println("Division: "+div_result);
+            float sq_result=calc.square(op);
+            System.out.println("Square: "+sq_result);
+            float cube_result=calc.cube(op);
+            System.out.println("Cube: "+cube_result);
             
 
         }   
